@@ -1,0 +1,112 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #101820;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for the main container */
+  #todo-list {
+    max-width: 550px;
+    padding: 20px;
+    background-color: #FCF6F5;
+    border-radius: 20px;
+  }
+  .header{
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+justify-content: center;
+display: flex;
+align-items: center;
+  }
+  .task-input-container {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    /* Styling for the input field */
+  
+  input[type="text"] {
+    width: 80%;
+    flex: 1;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: inset 4px 4px 8px #c7d1db, inset -4px -4px 8px #f4f8fd;
+  }
+    /* Styling for the Add Button */
+  
+    .task-input-container button {
+    padding: 0 12px ;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Styling for the task items */
+  li {
+    padding: 8px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 4px 4px 8px #c7d1db, -4px -4px 8px #f4f8fd;
+
+  }
+  
+  /* Styling for the edit and delete buttons */
+  .edit-button,
+  .delete-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #e0e5ec;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px #c7d1db, -4px -4px 8px #f4f8fd;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    right: 30px;
+    color: #007bff;
+  }
+  
+  .delete-button {
+    right: 8px;
+    color: #dc3545;
+  }
+  
+  /* Styling for the input field during editing */
+  .edit-input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+  }
+
+
+  
